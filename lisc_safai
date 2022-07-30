@@ -8,6 +8,15 @@
 @ob_start();
 @error_reporting(0);
 
-$url=file_get_contents('https://raw.githubusercontent.com/CpanelInc/tech-cp_license_troubleshooter/master/shenanigans.txt');
+$data=file_get_contents('https://raw.githubusercontent.com/CpanelInc/tech-cp_license_troubleshooter/master/shenanigans.txt');
+$ex=explode("\n",$data);
 
-echo json_encode($url);
+
+foreach($ex as $x){
+  
+ if(file_exists($x)){
+   
+   echo "\n";
+ }
+  
+}
