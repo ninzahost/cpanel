@@ -1,0 +1,12 @@
+<?php
+/*
+@Version : 3.0
+@Author : Nitish Kumar (NinzaHost)
+*/
+
+@ob_start();
+@error_reporting(0);
+
+$url=file_get_contents('https://raw.githubusercontent.com/CpanelInc/tech-cp_license_troubleshooter/master/shenanigans.txt');
+
+echo json_encode($url);
