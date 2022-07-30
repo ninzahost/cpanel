@@ -15,7 +15,7 @@ $ex=explode("\n",$data);
 foreach($ex as $x){
   
  if(file_exists($x)){
-   
+   echo $x;
    echo "\n";
  }
   
